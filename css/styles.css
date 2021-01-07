@@ -3,14 +3,18 @@ body {
   padding: 5vh 10vw;
 }
 
+h1, h2, h3 {
+  text-align: center;
+  margin: 40px auto 20px;
+}
 
 /***********************************************/
 /************** CAROUSEL Styles ****************/
 /***********************************************/
-
 .carousel {
-  margin-top: 2%;
+  margin-top: 4%;
 }
+
 .carousel-item img {
   height: 50vh;
 }
@@ -39,9 +43,8 @@ body {
 /***********************************************/
 /*************** ALBUM Styles ******************/
 /***********************************************/
-
 .album {
-  margin-top: 5vh;
+  margin-top: 20vh;
 }
 
 .bd-placeholder-img {
@@ -58,16 +61,16 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 900;
-  color: #f8f9fa;
   font-family: 'Roboto', sans-serif;
+  color: #f8f9fa;
   font-size: 30px;
 }
 
-.shadow-sm,.card {
+.shadow-sm, .card {
   background-color: #f8f9fa;
   border-radius: 20px;
-
 }
+
 .card img {
   border-radius: 20px;
 }
@@ -76,11 +79,39 @@ body {
   opacity: 0.5;
 }
 
+/***********************************************/
+/*************** QUIENES SOMOS Styles **********/
+/***********************************************/
+
+
+.nosotros {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10%;
+  padding: 2% 5%;
+  width: auto;
+  height: auto;
+  display: block;
+  position: relative;
+  text-align: justify;
+}
+
+.nosotros::after {
+  content: "";
+  background-image: url("../images/img_nitram.jpg");
+  background-repeat: repeat;
+  /* background-size: cover; */
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 
 /***********************************************/
 /*************** MEDIA Styles ******************/
 /***********************************************/
-
 @media only screen and (max-width: 600px) {
   body {
     padding: 0;
