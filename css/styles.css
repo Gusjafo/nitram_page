@@ -9,6 +9,11 @@ h1, h2, h3, h4, h5 {
   opacity: 1;
 }
 
+a {
+  transition: all 2s;
+}
+
+
 /***********************************************/
 /************** CAROUSEL Styles ****************/
 /***********************************************/
@@ -21,13 +26,13 @@ h1, h2, h3, h4, h5 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: grey;
-  opacity: 0.2;
+  background-color: black;
+  opacity: 0.6;
   padding-top: 0;
 }
 
 .carousel-caption:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .carousel-item img {
@@ -64,7 +69,7 @@ h1, h2, h3, h4, h5 {
 /*************** ALBUM Styles ******************/
 /***********************************************/
 .album {
-  margin-top: 20vh;
+  margin-top: 5vh;
 }
 
 .bd-placeholder-img {
@@ -97,6 +102,7 @@ h1, h2, h3, h4, h5 {
 
 .card:hover {
   opacity: 0.5;
+  transform: scale(1.06) perspective(882px) rotateX(5deg) rotateY(5deg) translateZ(5px);
 }
 
 /***********************************************/
@@ -106,7 +112,7 @@ h1, h2, h3, h4, h5 {
 
 .nosotros {
   font-family: 'Roboto', sans-serif;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 2% 5%;
   width: auto;
   height: auto;
